@@ -2,19 +2,25 @@ package dz6.geekbrains;
 
 public class Main {
     public static void main(String[] args) {
-        Cat cat1 = new Cat("Котиг");
-        cat1.run(130);
-        cat1.swim(15);
-        Cat cat2 = new Cat("Васька");
-        cat2.run(300);
-        cat2.swim(16);
-        Dog dog1 = new Dog("Барбос");
-        dog1.run(70);
-        dog1.swim(49);
-        Dog dog2 = new Dog("Витаминка");
-        dog2.run(50);
-        dog2.swim(5);
-        System.out.println("Всего животных :" + Animal.counter());
 
+        Cat cat1 = new Cat("Пупс");
+        cat1.run(150);
+        cat1.swim(20);
+        Cat cat2 = new Cat("Том");
+        cat2.run(27);
+        cat2.swim(88);
+        Dog dog1 = new Dog("Шарик");
+        dog1.run(100);
+        dog1.swim(100);
+        Dog dog2 = new Dog("Васька");
+        dog2.swim(27);
+        dog2.run(11);
+        Dog dog3 = new Dog("Паря");
+        dog3.swim(1000);
+        dog3.run(25);
+        System.out.println();
+        System.out.println("Было создано " + Cat.counter + " котов");
+        System.out.println("Было создано " + Dog.counter + " собак");
+        System.out.println("Было создано " + Animal.counter() + " животных");
     }
 }
